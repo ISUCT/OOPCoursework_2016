@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><layout title="" view="view">
+  <AnchorsPane background="#ffffff" cursor="0" name="view" prefHeight="377px" prefWidth="435px"/>
+  <HtmlArea name="htmlArea" parent="view" prefHeight="57px" prefWidth="290px" text="htmlArea">
+    <AnchorsPaneConstraints bottom="10px" left="10px" right="135px" top="310px"/>
+  </HtmlArea>
+  <Button cursor="0" name="btnSend" parent="view" prefHeight="30px" prefWidth="100px" text="Send">
+    <AnchorsPaneConstraints bottom="20px" height="30px" right="15px" width="100px"/>
+  </Button>
+  <ScrollPane cursor="0" name="scrollPane" parent="view" prefHeight="290px" prefWidth="410px">
+    <AnchorsPaneConstraints height="290px" left="10px" top="10px" width="410px"/>
+  </ScrollPane>
+  <BoxPane background="#ffffff" cursor="0" name="panel" orientation="1" parent="scrollPane" prefHeight="288px" prefWidth="408px"/>
+</layout>
