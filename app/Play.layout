@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?><layout title="" view="view">
+  <AnchorsPane background="#ffffff" cursor="0" name="view" prefHeight="300px" prefWidth="400px"/>
+  <GridPane background="#ffffff" columns="3" cursor="0" name="panel" parent="view" prefHeight="280px" prefWidth="380px" rows="3">
+    <AnchorsPaneConstraints bottom="10px" left="10px" right="10px" top="10px"/>
+  </GridPane>
+  <ToggleButton cursor="0" name="toggleButton" parent="panel" prefHeight="93px" prefWidth="126px" text="toggleButton"/>
+  <ToggleButton cursor="0" name="toggleButton1" parent="panel" prefHeight="93px" prefWidth="126px" text="toggleButton1"/>
+  <ToggleButton cursor="0" name="toggleButton2" parent="panel" prefHeight="93px" prefWidth="126px" text="toggleButton2"/>
+  <ToggleButton cursor="0" name="toggleButton3" parent="panel" prefHeight="93px" prefWidth="126px" text="toggleButton3"/>
+  <ToggleButton cursor="0" name="toggleButton4" parent="panel" prefHeight="93px" prefWidth="126px" text="toggleButton4"/>
+  <ToggleButton cursor="0" name="toggleButton6" parent="panel" prefHeight="93px" prefWidth="126px" text="toggleButton6"/>
+  <ToggleButton cursor="0" name="toggleButton5" parent="panel" prefHeight="93px" prefWidth="126px" text="toggleButton5"/>
+  <ToggleButton cursor="0" name="toggleButton7" parent="panel" prefHeight="93px" prefWidth="126px" text="toggleButton7"/>
+  <ToggleButton cursor="0" name="toggleButton8" parent="panel" prefHeight="93px" prefWidth="126px" text="toggleButton8"/>
+</layout>
