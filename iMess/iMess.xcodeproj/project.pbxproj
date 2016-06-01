@@ -1,0 +1,475 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2154EE23E87B76FF7C50FD90 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F41E97DC856AD795107AB0D6 /* Pods.framework */; };
+		CC6493BC1C93FA8B00F6BC73 /* UsersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6493BB1C93FA8B00F6BC73 /* UsersViewController.swift */; };
+		CC6493BE1C93FACC00F6BC73 /* UsersTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6493BD1C93FACC00F6BC73 /* UsersTableViewCell.swift */; };
+		CC6493C01C941C3800F6BC73 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6493BF1C941C3800F6BC73 /* ChatViewController.swift */; };
+		CC6EEA531C8F8EAF00B03A29 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6EEA521C8F8EAF00B03A29 /* AppDelegate.swift */; };
+		CC6EEA581C8F8EAF00B03A29 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC6EEA561C8F8EAF00B03A29 /* Main.storyboard */; };
+		CC6EEA5B1C8F8EAF00B03A29 /* iMess.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CC6EEA591C8F8EAF00B03A29 /* iMess.xcdatamodeld */; };
+		CC6EEA5D1C8F8EAF00B03A29 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC6EEA5C1C8F8EAF00B03A29 /* Assets.xcassets */; };
+		CC6EEA601C8F8EAF00B03A29 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC6EEA5E1C8F8EAF00B03A29 /* LaunchScreen.storyboard */; };
+		CC6EEA681C8F905B00B03A29 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6EEA671C8F905B00B03A29 /* LoginViewController.swift */; };
+		CC6EEA6A1C8F9AED00B03A29 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6EEA691C8F9AED00B03A29 /* SignUpViewController.swift */; };
+		CC8261F81CA2E86000C5B7A4 /* ChatsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC8261F71CA2E86000C5B7A4 /* ChatsCell.swift */; };
+		CC8261FA1CA2E89000C5B7A4 /* ChatsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC8261F91CA2E89000C5B7A4 /* ChatsTableViewController.swift */; };
+		CCC3FC891C916D07009632E5 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCC3FC871C916D07009632E5 /* Bolts.framework */; };
+		CCC3FC8A1C916D07009632E5 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCC3FC881C916D07009632E5 /* Parse.framework */; };
+		CCC3FC8C1C916D72009632E5 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCC3FC8B1C916D72009632E5 /* AudioToolbox.framework */; };
+		CCC3FC8E1C916D91009632E5 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCC3FC8D1C916D91009632E5 /* CFNetwork.framework */; };
+		CCC3FC901C916D9F009632E5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCC3FC8F1C916D9F009632E5 /* CoreGraphics.framework */; };
+		CCC3FC921C916DAA009632E5 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCC3FC911C916DAA009632E5 /* CoreLocation.framework */; };
+		CCC3FC941C916DB6009632E5 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCC3FC931C916DB6009632E5 /* QuartzCore.framework */; };
+		CCC3FC961C916DC0009632E5 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCC3FC951C916DC0009632E5 /* Security.framework */; };
+		CCC3FC981C916DC5009632E5 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCC3FC971C916DC5009632E5 /* StoreKit.framework */; };
+		CCC3FC9A1C916DD4009632E5 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCC3FC991C916DD4009632E5 /* SystemConfiguration.framework */; };
+		CCC3FC9C1C916DE8009632E5 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CCC3FC9B1C916DE8009632E5 /* libz.tbd */; };
+		CCC3FC9E1C916DFD009632E5 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CCC3FC9D1C916DFD009632E5 /* libsqlite3.tbd */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2746CEC7252549377CEE9CDA /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		8CCC3281C5A0F7923C3BC2B7 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		CC6493BB1C93FA8B00F6BC73 /* UsersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UsersViewController.swift; sourceTree = "<group>"; };
+		CC6493BD1C93FACC00F6BC73 /* UsersTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UsersTableViewCell.swift; sourceTree = "<group>"; };
+		CC6493BF1C941C3800F6BC73 /* ChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		CC6EEA4F1C8F8EAE00B03A29 /* iMess.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iMess.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC6EEA521C8F8EAF00B03A29 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CC6EEA571C8F8EAF00B03A29 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CC6EEA5A1C8F8EAF00B03A29 /* iMess.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = iMess.xcdatamodel; sourceTree = "<group>"; };
+		CC6EEA5C1C8F8EAF00B03A29 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CC6EEA5F1C8F8EAF00B03A29 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CC6EEA611C8F8EAF00B03A29 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CC6EEA671C8F905B00B03A29 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		CC6EEA691C8F9AED00B03A29 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		CC8261F71CA2E86000C5B7A4 /* ChatsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatsCell.swift; sourceTree = "<group>"; };
+		CC8261F91CA2E89000C5B7A4 /* ChatsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatsTableViewController.swift; sourceTree = "<group>"; };
+		CCC3FC871C916D07009632E5 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = iMess/Bolts.framework; sourceTree = "<group>"; };
+		CCC3FC881C916D07009632E5 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = iMess/Parse.framework; sourceTree = "<group>"; };
+		CCC3FC8B1C916D72009632E5 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		CCC3FC8D1C916D91009632E5 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		CCC3FC8F1C916D9F009632E5 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		CCC3FC911C916DAA009632E5 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		CCC3FC931C916DB6009632E5 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		CCC3FC951C916DC0009632E5 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		CCC3FC971C916DC5009632E5 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		CCC3FC991C916DD4009632E5 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		CCC3FC9B1C916DE8009632E5 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		CCC3FC9D1C916DFD009632E5 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		F41E97DC856AD795107AB0D6 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CC6EEA4C1C8F8EAE00B03A29 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCC3FC9E1C916DFD009632E5 /* libsqlite3.tbd in Frameworks */,
+				CCC3FC9C1C916DE8009632E5 /* libz.tbd in Frameworks */,
+				CCC3FC9A1C916DD4009632E5 /* SystemConfiguration.framework in Frameworks */,
+				CCC3FC981C916DC5009632E5 /* StoreKit.framework in Frameworks */,
+				CCC3FC961C916DC0009632E5 /* Security.framework in Frameworks */,
+				CCC3FC941C916DB6009632E5 /* QuartzCore.framework in Frameworks */,
+				CCC3FC921C916DAA009632E5 /* CoreLocation.framework in Frameworks */,
+				CCC3FC901C916D9F009632E5 /* CoreGraphics.framework in Frameworks */,
+				CCC3FC8E1C916D91009632E5 /* CFNetwork.framework in Frameworks */,
+				CCC3FC8C1C916D72009632E5 /* AudioToolbox.framework in Frameworks */,
+				CCC3FC8A1C916D07009632E5 /* Parse.framework in Frameworks */,
+				CCC3FC891C916D07009632E5 /* Bolts.framework in Frameworks */,
+				2154EE23E87B76FF7C50FD90 /* Pods.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1C482F6EC654A8042C604348 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2746CEC7252549377CEE9CDA /* Pods.debug.xcconfig */,
+				8CCC3281C5A0F7923C3BC2B7 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		CC6EEA461C8F8EAE00B03A29 = {
+			isa = PBXGroup;
+			children = (
+				CCC3FC9F1C916E66009632E5 /* Frameworks */,
+				CC6EEA511C8F8EAF00B03A29 /* iMess */,
+				CC6EEA501C8F8EAE00B03A29 /* Products */,
+				1C482F6EC654A8042C604348 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		CC6EEA501C8F8EAE00B03A29 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CC6EEA4F1C8F8EAE00B03A29 /* iMess.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CC6EEA511C8F8EAF00B03A29 /* iMess */ = {
+			isa = PBXGroup;
+			children = (
+				CC6EEA521C8F8EAF00B03A29 /* AppDelegate.swift */,
+				CC6493BB1C93FA8B00F6BC73 /* UsersViewController.swift */,
+				CC6493BD1C93FACC00F6BC73 /* UsersTableViewCell.swift */,
+				CC6EEA561C8F8EAF00B03A29 /* Main.storyboard */,
+				CC8261F71CA2E86000C5B7A4 /* ChatsCell.swift */,
+				CC6EEA691C8F9AED00B03A29 /* SignUpViewController.swift */,
+				CC8261F91CA2E89000C5B7A4 /* ChatsTableViewController.swift */,
+				CC6493BF1C941C3800F6BC73 /* ChatViewController.swift */,
+				CC6EEA671C8F905B00B03A29 /* LoginViewController.swift */,
+				CC6EEA5C1C8F8EAF00B03A29 /* Assets.xcassets */,
+				CC6EEA5E1C8F8EAF00B03A29 /* LaunchScreen.storyboard */,
+				CC6EEA611C8F8EAF00B03A29 /* Info.plist */,
+				CC6EEA591C8F8EAF00B03A29 /* iMess.xcdatamodeld */,
+			);
+			path = iMess;
+			sourceTree = "<group>";
+		};
+		CCC3FC9F1C916E66009632E5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CCC3FC9D1C916DFD009632E5 /* libsqlite3.tbd */,
+				CCC3FC9B1C916DE8009632E5 /* libz.tbd */,
+				CCC3FC871C916D07009632E5 /* Bolts.framework */,
+				CCC3FC881C916D07009632E5 /* Parse.framework */,
+				CCC3FC991C916DD4009632E5 /* SystemConfiguration.framework */,
+				CCC3FC971C916DC5009632E5 /* StoreKit.framework */,
+				CCC3FC951C916DC0009632E5 /* Security.framework */,
+				CCC3FC931C916DB6009632E5 /* QuartzCore.framework */,
+				CCC3FC911C916DAA009632E5 /* CoreLocation.framework */,
+				CCC3FC8F1C916D9F009632E5 /* CoreGraphics.framework */,
+				CCC3FC8D1C916D91009632E5 /* CFNetwork.framework */,
+				CCC3FC8B1C916D72009632E5 /* AudioToolbox.framework */,
+				F41E97DC856AD795107AB0D6 /* Pods.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CC6EEA4E1C8F8EAE00B03A29 /* iMess */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CC6EEA641C8F8EAF00B03A29 /* Build configuration list for PBXNativeTarget "iMess" */;
+			buildPhases = (
+				6E1C116DC7F2FA80E1E640D0 /* Check Pods Manifest.lock */,
+				CC6EEA4B1C8F8EAE00B03A29 /* Sources */,
+				CC6EEA4C1C8F8EAE00B03A29 /* Frameworks */,
+				CC6EEA4D1C8F8EAE00B03A29 /* Resources */,
+				EBAAF0549B844D1CE4471B0D /* Embed Pods Frameworks */,
+				BA2045B186E07D3919E1A3F1 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iMess;
+			productName = iMess;
+			productReference = CC6EEA4F1C8F8EAE00B03A29 /* iMess.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CC6EEA471C8F8EAE00B03A29 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Дмитрий Александров";
+				TargetAttributes = {
+					CC6EEA4E1C8F8EAE00B03A29 = {
+						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = 348T7PASA4;
+					};
+				};
+			};
+			buildConfigurationList = CC6EEA4A1C8F8EAE00B03A29 /* Build configuration list for PBXProject "iMess" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CC6EEA461C8F8EAE00B03A29;
+			productRefGroup = CC6EEA501C8F8EAE00B03A29 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CC6EEA4E1C8F8EAE00B03A29 /* iMess */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CC6EEA4D1C8F8EAE00B03A29 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC6EEA601C8F8EAF00B03A29 /* LaunchScreen.storyboard in Resources */,
+				CC6EEA5D1C8F8EAF00B03A29 /* Assets.xcassets in Resources */,
+				CC6EEA581C8F8EAF00B03A29 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6E1C116DC7F2FA80E1E640D0 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		BA2045B186E07D3919E1A3F1 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EBAAF0549B844D1CE4471B0D /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CC6EEA4B1C8F8EAE00B03A29 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC6EEA681C8F905B00B03A29 /* LoginViewController.swift in Sources */,
+				CC6EEA531C8F8EAF00B03A29 /* AppDelegate.swift in Sources */,
+				CC6493BC1C93FA8B00F6BC73 /* UsersViewController.swift in Sources */,
+				CC6493C01C941C3800F6BC73 /* ChatViewController.swift in Sources */,
+				CC6EEA6A1C8F9AED00B03A29 /* SignUpViewController.swift in Sources */,
+				CC8261F81CA2E86000C5B7A4 /* ChatsCell.swift in Sources */,
+				CC6493BE1C93FACC00F6BC73 /* UsersTableViewCell.swift in Sources */,
+				CC6EEA5B1C8F8EAF00B03A29 /* iMess.xcdatamodeld in Sources */,
+				CC8261FA1CA2E89000C5B7A4 /* ChatsTableViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CC6EEA561C8F8EAF00B03A29 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CC6EEA571C8F8EAF00B03A29 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CC6EEA5E1C8F8EAF00B03A29 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CC6EEA5F1C8F8EAF00B03A29 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CC6EEA621C8F8EAF00B03A29 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CC6EEA631C8F8EAF00B03A29 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CC6EEA651C8F8EAF00B03A29 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2746CEC7252549377CEE9CDA /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/iMess",
+				);
+				INFOPLIST_FILE = iMess/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = dmitryal37.iMess;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Debug;
+		};
+		CC6EEA661C8F8EAF00B03A29 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8CCC3281C5A0F7923C3BC2B7 /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/iMess",
+				);
+				INFOPLIST_FILE = iMess/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = dmitryal37.iMess;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CC6EEA4A1C8F8EAE00B03A29 /* Build configuration list for PBXProject "iMess" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC6EEA621C8F8EAF00B03A29 /* Debug */,
+				CC6EEA631C8F8EAF00B03A29 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CC6EEA641C8F8EAF00B03A29 /* Build configuration list for PBXNativeTarget "iMess" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC6EEA651C8F8EAF00B03A29 /* Debug */,
+				CC6EEA661C8F8EAF00B03A29 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		CC6EEA591C8F8EAF00B03A29 /* iMess.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				CC6EEA5A1C8F8EAF00B03A29 /* iMess.xcdatamodel */,
+			);
+			currentVersion = CC6EEA5A1C8F8EAF00B03A29 /* iMess.xcdatamodel */;
+			path = iMess.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = CC6EEA471C8F8EAE00B03A29 /* Project object */;
+}
