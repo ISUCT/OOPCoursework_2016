@@ -2,7 +2,7 @@
  * 
  * @author alina
  */
-define('Play', ['orm', 'forms', 'ui','logger'], function (Orm, Forms, Ui,Logger, ModuleName) {
+define('Play', ['orm', 'forms', 'ui', 'logger'], function (Orm, Forms, Ui, Logger, ModuleName) {
 
     function module_constructor() {
         var self = this
@@ -24,7 +24,7 @@ define('Play', ['orm', 'forms', 'ui','logger'], function (Orm, Forms, Ui,Logger,
 
 
         function onClick(evt) {
-             wsProxy.send(JSON.stringify({row:evt.source.row,col: evt.source.col}));
+            wsProxy.send(JSON.stringify({row: evt.source.row, col: evt.source.col}));
         }
 
         function matrixDraw(matrix) {
@@ -107,6 +107,6 @@ define('Play', ['orm', 'forms', 'ui','logger'], function (Orm, Forms, Ui,Logger,
 
     }
     return module_constructor;
-    
+
 
 });

@@ -53,6 +53,20 @@ define(['boxing'], function(B) {
     }
     /**
      * Applies the updates into the database and commits the transaction.
+     * @param params Params object literal.
+     * @param onSuccess Success callback. It has an argument, - updates rows count.
+     * @param onFailure Failure callback. It has an argument, - exception occured while applying updates into the database.
+     * @method update
+     * @memberOf ApplicationDbEntity
+     */
+    ApplicationDbEntity.prototype.update = function(params, onSuccess, onFailure) {
+        var delegate = this.unwrap();
+        var value = delegate.update(B.boxAsJava(params), B.boxAsJava(onSuccess), B.boxAsJava(onFailure));
+        return B.boxAsJs(value);
+    };
+
+    /**
+     * Applies the updates into the database and commits the transaction.
      * @param onSuccess Success callback. It has an argument, - updates rows count.
      * @param onFailure Failure callback. It has an argument, - exception occured while applying updates into the database.
      * @method executeUpdate
@@ -66,12 +80,13 @@ define(['boxing'], function(B) {
 
     /**
      * Adds the updates into the change log as a command.
+     * @param params Params object literal. Optional. If absent, entity's parameters' values will be taken.
      * @method enqueueUpdate
      * @memberOf ApplicationDbEntity
      */
-    ApplicationDbEntity.prototype.enqueueUpdate = function() {
+    ApplicationDbEntity.prototype.enqueueUpdate = function(params) {
         var delegate = this.unwrap();
-        var value = delegate.enqueueUpdate();
+        var value = delegate.enqueueUpdate(B.boxAsJava(params));
         return B.boxAsJs(value);
     };
 

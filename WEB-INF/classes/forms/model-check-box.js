@@ -88,6 +88,17 @@ define(['boxing', 'common-utils/color', 'common-utils/cursor', 'common-utils/fon
             }
         });
 
+        this.nullable = true;
+        Object.defineProperty(this, "nullable", {
+            get: function() {
+                var value = delegate.nullable;
+                return B.boxAsJs(value);
+            },
+            set: function(aValue) {
+                delegate.nullable = B.boxAsJava(aValue);
+            }
+        });
+
         /**
          * Keyboard focus lost by the component event handler function.
          */
@@ -99,17 +110,6 @@ define(['boxing', 'common-utils/color', 'common-utils/cursor', 'common-utils/fon
             },
             set: function(aValue) {
                 delegate.onFocusLost = aValue;
-            }
-        });
-
-        this.nullable = true;
-        Object.defineProperty(this, "nullable", {
-            get: function() {
-                var value = delegate.nullable;
-                return B.boxAsJs(value);
-            },
-            set: function(aValue) {
-                delegate.nullable = B.boxAsJava(aValue);
             }
         });
 
@@ -360,6 +360,17 @@ define(['boxing', 'common-utils/color', 'common-utils/cursor', 'common-utils/fon
         });
 
         /**
+         * Native API. Returns low level html element. Applicable only in HTML5 client.
+         */
+        this.element = new Object();
+        Object.defineProperty(this, "element", {
+            get: function() {
+                var value = delegate.element;
+                return B.boxAsJs(value);
+            }
+        });
+
+        /**
          * Component shown event handler function.
          */
         this.onComponentShown = new Object();
@@ -370,17 +381,6 @@ define(['boxing', 'common-utils/color', 'common-utils/cursor', 'common-utils/fon
             },
             set: function(aValue) {
                 delegate.onComponentShown = aValue;
-            }
-        });
-
-        /**
-         * Native API. Returns low level html element. Applicable only in HTML5 client.
-         */
-        this.element = new Object();
-        Object.defineProperty(this, "element", {
-            get: function() {
-                var value = delegate.element;
-                return B.boxAsJs(value);
             }
         });
 

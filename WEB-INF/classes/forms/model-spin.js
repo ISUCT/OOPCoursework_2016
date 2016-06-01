@@ -193,6 +193,17 @@ define(['boxing', 'common-utils/color', 'common-utils/cursor', 'common-utils/fon
         });
 
         /**
+         * Native API. Returns low level html element. Applicable only in HTML5 client.
+         */
+        this.element = new Object();
+        Object.defineProperty(this, "element", {
+            get: function() {
+                var value = delegate.element;
+                return B.boxAsJs(value);
+            }
+        });
+
+        /**
          * Component shown event handler function.
          */
         this.onComponentShown = new Object();
@@ -203,17 +214,6 @@ define(['boxing', 'common-utils/color', 'common-utils/cursor', 'common-utils/fon
             },
             set: function(aValue) {
                 delegate.onComponentShown = aValue;
-            }
-        });
-
-        /**
-         * Native API. Returns low level html element. Applicable only in HTML5 client.
-         */
-        this.element = new Object();
-        Object.defineProperty(this, "element", {
-            get: function() {
-                var value = delegate.element;
-                return B.boxAsJs(value);
             }
         });
 
@@ -484,20 +484,6 @@ define(['boxing', 'common-utils/color', 'common-utils/cursor', 'common-utils/fon
         });
 
         /**
-        * Determines the lower bound of spinner's value. If it's null, valus is unlimited at lower bound.
-        */
-        this.min = 0;
-        Object.defineProperty(this, "min", {
-            get: function() {
-                var value = delegate.min;
-                return B.boxAsJs(value);
-            },
-            set: function(aValue) {
-                delegate.min = B.boxAsJava(aValue);
-            }
-        });
-
-        /**
          * Widget's value.
          */
         this.value = new Object();
@@ -508,6 +494,20 @@ define(['boxing', 'common-utils/color', 'common-utils/cursor', 'common-utils/fon
             },
             set: function(aValue) {
                 delegate.jsValue = B.boxAsJava(aValue);
+            }
+        });
+
+        /**
+        * Determines the lower bound of spinner's value. If it's null, valus is unlimited at lower bound.
+        */
+        this.min = 0;
+        Object.defineProperty(this, "min", {
+            get: function() {
+                var value = delegate.min;
+                return B.boxAsJs(value);
+            },
+            set: function(aValue) {
+                delegate.min = B.boxAsJava(aValue);
             }
         });
 

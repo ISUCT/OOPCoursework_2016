@@ -295,6 +295,17 @@ define(['boxing', 'common-utils/color', 'common-utils/cursor', 'common-utils/fon
         });
 
         /**
+         * Native API. Returns low level html element. Applicable only in HTML5 client.
+         */
+        this.element = new Object();
+        Object.defineProperty(this, "element", {
+            get: function() {
+                var value = delegate.element;
+                return B.boxAsJs(value);
+            }
+        });
+
+        /**
          * Component shown event handler function.
          */
         this.onComponentShown = new Object();
@@ -305,17 +316,6 @@ define(['boxing', 'common-utils/color', 'common-utils/cursor', 'common-utils/fon
             },
             set: function(aValue) {
                 delegate.onComponentShown = aValue;
-            }
-        });
-
-        /**
-         * Native API. Returns low level html element. Applicable only in HTML5 client.
-         */
-        this.element = new Object();
-        Object.defineProperty(this, "element", {
-            get: function() {
-                var value = delegate.element;
-                return B.boxAsJs(value);
             }
         });
 
@@ -376,20 +376,6 @@ define(['boxing', 'common-utils/color', 'common-utils/cursor', 'common-utils/fon
         });
 
         /**
-         * Overrides the default focus traversal policy for this component's focus traversal cycle by unconditionally setting the specified component as the next component in the cycle, and this component as the specified component's previous component.
-         */
-        this.nextFocusableComponent = new Object();
-        Object.defineProperty(this, "nextFocusableComponent", {
-            get: function() {
-                var value = delegate.nextFocusableComponent;
-                return B.boxAsJs(value);
-            },
-            set: function(aValue) {
-                delegate.nextFocusableComponent = B.boxAsJava(aValue);
-            }
-        });
-
-        /**
         * The amount of space between the text and the icon displayed in this button.
         */
         this.iconTextGap = 0;
@@ -400,6 +386,20 @@ define(['boxing', 'common-utils/color', 'common-utils/cursor', 'common-utils/fon
             },
             set: function(aValue) {
                 delegate.iconTextGap = B.boxAsJava(aValue);
+            }
+        });
+
+        /**
+         * Overrides the default focus traversal policy for this component's focus traversal cycle by unconditionally setting the specified component as the next component in the cycle, and this component as the specified component's previous component.
+         */
+        this.nextFocusableComponent = new Object();
+        Object.defineProperty(this, "nextFocusableComponent", {
+            get: function() {
+                var value = delegate.nextFocusableComponent;
+                return B.boxAsJs(value);
+            },
+            set: function(aValue) {
+                delegate.nextFocusableComponent = B.boxAsJava(aValue);
             }
         });
 
