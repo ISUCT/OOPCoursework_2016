@@ -7,19 +7,19 @@ print (greeting)
 choice = input()
 if choice == '1':
     print ('Введите текст :')
-    b = input()
-    var = open('temp.txt', 'w')
-    var.write (b)
+    c = input()
+    var = open('temp.txt', 'a')
+    var.write (c)
     
 
-    '''if choice == '2':
+    if choice == '2':
         print ('Укажите название файла :')
         b = input()
         var = open (b, 'r')
-        b = var'''
+        c = var.read(b)
     
     
-text = b
+text = c
 
 
 payload = {'key': 'ad1a47b1-790b-45bc-a078-646ad1e01894',
